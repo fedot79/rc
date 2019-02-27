@@ -1,0 +1,100 @@
+.title {
+    color: #474b53;
+    font-family: "Gilroy";
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 168px;
+}
+.problems {
+    padding-top: 158px;
+    padding-bottom: 124px;
+    background-color: #5ba1af;
+    position: relative;
+    overflow: hidden;
+    &__slider {
+        max-width: 1340px;
+        margin: 0 auto;
+    }
+    &__item {
+        color: #fff;
+        // width: 30%;
+    }
+    &__title {
+        font-size: 30px;
+        font-family: "Gilroy";
+        font-weight: 800;
+        padding-bottom: 55px;
+        padding-left: 48px;
+    }
+    &__description {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding-bottom: 82px;
+       min-height: 154px;
+    }
+    &__circle {
+        left: 0;
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 15px solid #ffffff;
+    }
+    &__text {
+        padding-left: 19px;
+        font-size: 16px;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        max-width: 310px;
+        span {
+            font-weight: 800;
+        }
+    }
+    &--dark {
+        color: #474b53;
+        .problems__circle {
+            border-color: #474b53;
+        }
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -30px;
+        right: 0;
+        width: 34%;
+        height: 30px;
+        background-color: #474b53;
+
+    }
+}
+.slick-arrow {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    fill: #fff;
+    cursor: pointer;
+}
+.svg-left {
+    left: -200px;
+}
+.svg-right {
+    right: -200px;
+}
+.problems__circle-bg {
+    border-color: transparent;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.problems__mincircle-bg {
+    width: 428px;
+    height: 428px;
+    border: 100px solid #63a8b5;
+    left: 5%;
+}

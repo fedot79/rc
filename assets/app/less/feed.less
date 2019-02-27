@@ -1,0 +1,111 @@
+.modal.modal-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+.col{
+  margin-right: auto;
+  max-width: 900px;
+}
+#feed_modal{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  input{
+    display: none;
+  }
+  label{
+
+  }
+  .button-common{
+    cursor: pointer;
+    text-align: center;
+    margin-left: 0;
+    display: inline-block !important;
+  }
+  .button-gray{
+    margin-left: 15px;
+  }
+}
+.button-dotted{
+  color: #333;
+  text-decoration: none;
+  &:hover{
+    color: #0ea3b1;
+    text-decoration: none;
+    border-bottom-color: #0ea3b1;
+  }
+}
+p.bullet{
+  margin-bottom: 3px;
+  &::before{
+    display: inline-block;
+    content: '•';
+    margin-right: 15px;
+    color: #0ea3b1;
+  }
+}
+.progress-bar-info{
+  margin-bottom: 17px;
+  background: none;
+}
+.progress-bar{
+  width: 100%;
+  float: none;
+  border-width: 1px;
+  border-color: rgba(67, 74, 83, 0.5);
+  border-style: solid;
+  height: 13px;
+  border-radius: 6.5px;
+  background: none;
+  &.error{
+    background: #a94442;
+  }
+}
+.progress-bar-tick{
+  background-image: -moz-linear-gradient( -39deg, rgb(91,95,99) 0%, rgb(121,126,133) 100%);
+  background-image: -webkit-linear-gradient( -39deg, rgb(91,95,99) 0%, rgb(121,126,133) 100%);
+  background-image: -ms-linear-gradient( -39deg, rgb(91,95,99) 0%, rgb(121,126,133) 100%);
+  display: block;
+  height: 100%;
+  border-radius: 5.5px;
+  width: 0%;
+}
+.progress-bar-error{
+  border-radius: 5px;
+  background-color: rgb(246, 232, 232);
+  display: inline-block;
+  margin-top: 20px;
+  color: #e2574c;
+  padding: 11px 16px 9px 35px;
+  position: relative;
+  max-width: 300px;
+  &:before{
+    content: '';
+    background-image: url(/img/exclamation-mark.svg);
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    transform: translate(0, -50%);
+  }
+}
+.instruction {
+  max-width: 1142px;
+  min-width: 300px;
+  width: 100%;
+}
+.instruction img {
+  margin: 10px 0 20px 0;
+  max-width: 1142px;
+  min-width: 300px;
+  width: 100%;
+}
+.instruction ol {
+  margin: 15px 0 40px 0;
+}

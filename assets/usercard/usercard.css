@@ -1,0 +1,299 @@
+.card-contacts {
+  width: 324px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.13);
+  margin-right: auto;
+  position: relative;
+}
+.card-contacts p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #434a53;
+  font-family: "LatoWeb";
+  text-align: center;
+  width: 128px;
+  margin-top: 36px;
+  margin-bottom: 22px;
+}
+.card-contacts img.av-peregovory {
+  width: 162px;
+  height: 162px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+}
+.card-contacts img.rating {
+  margin-bottom: 23px;
+}
+.card-contacts .rate-number {
+  font-size: 14px;
+  line-height: 20px;
+  color: #434a53;
+  font-family: "LatoWeb";
+  text-align: center;
+  width: 128px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: row;
+}
+.card-contacts .rate-number p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #434a53;
+  font-family: "LatoWeb";
+  text-align: center;
+  width: 128px;
+  margin-left: 73px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.card-contacts {
+  font-size: 14px;
+  color: #434a53;
+  padding: 30px 22px;
+  background-color: #f7f7f7;
+}
+.card-contacts .stars svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+}
+.card-contacts .name {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.card-contacts .rate-line {
+  width: 100px !important;
+  display: flex;
+  margin: 20px 0 0 !important;
+}
+.card-contacts .rate-line hr {
+  margin: auto 8px;
+  width: 100%;
+}
+.card-contacts .rate-line .button-dotted {
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+}
+.card-contacts .rate-line .button-dotted:hover {
+  text-decoration: inherit;
+  color: #0ea3b1;
+  border-color: #0ea3b1;
+}
+.card-contacts .rate-line :last-child {
+  font-weight: bold;
+}
+.card-contacts hr {
+  width: 100%;
+}
+.card-contacts .info-line {
+  margin: 0 !important;
+  padding-top: 30px;
+}
+.card-contacts button {
+  margin-top: 20px;
+}
+.card-contacts .info-line {
+  align-self: flex-start;
+}
+.card-contacts .info-line img {
+  width: 14px;
+  height: 14px;
+  margin-right: 18px;
+}
+.card-contacts .info-line.mobile img {
+  margin-left: 6px;
+  width: 16px;
+  height: 16px;
+  margin-right: 0;
+}
+.card-contacts .info-line.mobile img:first-of-type {
+  margin-left: 0;
+}
+.card-contacts .info-line.mobile img:last-of-type {
+  margin-right: 30px;
+}
+.card-contacts .mobile {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 26px;
+  color: #434a53;
+  font-family: "LatoWeb";
+  margin-bottom: 41px;
+  align-items: center;
+}
+#container.open_contact {
+  position: relative;
+  perspective: 1050px;
+  transform-style: preserve-3d;
+}
+#container.open_contact .card-new {
+  margin-bottom: 0;
+  z-index: 1;
+  transition: transform 0.7s ease-in-out;
+  backface-visibility: hidden;
+  transform: rotate3D(0, 1, 0, 0deg);
+  margin-right: auto;
+}
+#container.open_contact.show_contact .card-new {
+  backface-visibility: hidden;
+  animation: hide-left 1s forwards ease;
+}
+#container.open_contact.show_contact .card-contacts {
+  transform: translateX(-50%);
+  animation: show-left 1s forwards ease;
+}
+#container.open_contact.hide_contact .card-new {
+  backface-visibility: hidden;
+  animation: show-right 1s forwards ease;
+}
+#container.open_contact.hide_contact .card-contacts {
+  transform: translateX(-50%);
+  animation: hide-right 1s forwards ease;
+}
+.card-popup.open_contact {
+  perspective: 1050px;
+  transform-style: preserve-3d;
+  background: none;
+}
+.card-popup.open_contact .backplate {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, -500px);
+  background: black;
+}
+.card-popup.open_contact .card-new {
+  margin-bottom: 0;
+  z-index: 1;
+  transition: transform 0.7s ease-in-out;
+  backface-visibility: hidden;
+  transform: rotate3D(0, 1, 0, 0deg);
+  margin-right: auto;
+}
+.card-popup.open_contact.show_contact .card-new {
+  backface-visibility: hidden;
+  animation: hide-left 1s forwards ease;
+}
+.card-popup.open_contact.show_contact .card-contacts {
+  transform: translateX(-50%);
+  animation: show-left 1s forwards ease;
+}
+.card-popup.open_contact.hide_contact .card-new {
+  backface-visibility: hidden;
+  animation: show-right 1s forwards ease;
+}
+.card-popup.open_contact.hide_contact .card-contacts {
+  transform: translateX(-50%);
+  animation: hide-right 1s forwards ease;
+}
+.card-contacts {
+  z-index: 0;
+  width: 324px;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  height: 600px;
+  transform: translateX(-50%);
+  transition: transform 0.7s ease-in-out;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: -webkit-linear-gradient(117deg, #434a53 0%, #434a53 100%);
+}
+.card-contacts .card-spine {
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 20px;
+  height: 100%;
+}
+.card-contacts-wrap {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 22px;
+  background-image: url('/img/blur.png');
+  background-size: cover;
+}
+.open_contact:not(.show_contact) .card-contacts {
+  visibility: hidden;
+}
+.close-cont {
+  display: block;
+  width: 15px;
+  height: 16px;
+  margin: 12px 15px;
+  fill: #fff;
+  margin-bottom: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+  pointer-events: all;
+}
+@keyframes show-left {
+  0% {
+    transform: translateZ(-200px) translateX(-50%);
+  }
+  40% {
+    transform: translate(-90%, 0) scale(0.8) rotateY(20deg);
+  }
+  100% {
+    transform: translateZ(0px) translateX(-50%);
+  }
+}
+@keyframes hide-left {
+  0% {
+    transform: translateZ(0px);
+    visibility: visible;
+  }
+  40% {
+    transform: translate(40%, 0) scale(0.8) rotateY(-20deg);
+  }
+  100% {
+    transform: translateZ(-200px);
+    visibility: hidden;
+  }
+}
+@keyframes show-right {
+  0% {
+    transform: translateZ(-200px);
+  }
+  40% {
+    transform: translate(40%, 0) scale(0.8) rotateY(-20deg);
+  }
+  100% {
+    transform: translateZ(0px);
+  }
+}
+@keyframes hide-right {
+  0% {
+    transform: translateZ(0px) translateX(-50%);
+    visibility: visible;
+  }
+  40% {
+    transform: translate(-90%, 0) scale(0.8) rotateY(20deg);
+  }
+  100% {
+    transform: translateZ(-200px) translateX(-50%);
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=usercard.css.map */

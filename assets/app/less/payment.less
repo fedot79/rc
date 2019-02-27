@@ -1,0 +1,347 @@
+.payment{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 60px;
+  .row{
+    //width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left{
+    width: 40%;
+  }
+  .right{
+    width: 40%;
+  }
+  p{
+    font-family: LatoWeb;
+    color:  #434a53;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.047px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .amount__input {
+    display: flex;
+    justify-content: center;
+    color:  #434a53;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 0 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #434a53;
+    width: fit-content;
+    text-transform: uppercase;
+    height: 57px;
+    .amount__text{
+      height: 57px;
+      margin-right: 5px;
+    }
+    span {
+      margin: 0 14px !important;
+    }
+    input {
+      border-radius: 5px;
+      border-width: 1px;
+      border-color: #dee6f1;
+      border-style: solid;
+      background-color: #f6f8fb;
+      width: 127px;
+      height: 33px;
+    }
+  }
+  h4{
+    margin-top: 87px;
+    padding-bottom: 10px;
+    font-family: LatoWeb;
+    color:  #434a53;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 18px;
+    border-bottom: 1px solid black;
+    width: 80%;
+    text-align: center;
+    //&:first-child{
+    //  margin-right: 50px;
+    //}
+  }
+  ol{
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    list-style-type: none;
+  }
+  li{
+    margin: 20px 0;
+  }
+  .num{
+    font-family: Gilroy;
+    color:  #434a53;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding-right: 7px;
+  }
+  .submit_payment{
+    margin-top: 50px;
+    button{
+      border-radius: 5px;
+      padding: 0 49px;
+      font-size: 10px;
+      color: #b3b7ba;
+      font-family: Gilroy;
+      background: none;
+      font-weight: 600;
+      border: 1px solid hsl(214, 11%, 29%);
+      line-height: 35px;
+      color: hsl(214, 11%, 29%);
+      text-transform: uppercase;
+      outline: none;
+      &:hover{
+        background: hsl(214, 11%, 29%);
+        color: #fff;
+      }
+    }
+  }
+  .requisites{
+    font-family: LatoWeb;
+    color:  #434a53;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    span{
+      margin-right: 27px;
+    }
+    input{
+      font-size: 12px;
+      border-radius: 3px;
+      border-width: 1px;
+      border-color:  #dee6f1;
+      border-style: solid;
+      width: 209px;
+      line-height: 33px;
+      background-color: transparent;
+      padding: 0 10px;
+    }
+  }
+  .links{
+    margin-top: 50px;
+    a{
+      font-family: LatoWeb;
+      color:  #434a53;
+      font-size: 14px;
+      &:hover{
+        text-decoration-style: dotted;
+      }
+    }
+  }
+}
+@media (min-width: 1024px){
+  .small-screen{
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 568px){
+  .payment{
+    padding: 40px 30px;
+    //.small-screen{
+    //  display: inline;
+    //}
+    .large-screen{
+      display: none;
+    }
+    .row{
+      flex-wrap: wrap;
+      .amount__text{
+        width: 100%;
+      }
+      .amount__input{
+        width: 100%;
+      }
+    }
+    h4{
+      width: 50%;
+      color:  #d9e1ed;
+      border-color: #d9e1ed;
+    }
+    .active{
+      color:  #434a53;
+      border-color: #434a53;
+    }
+    .left,.right{
+      width: 100%;
+    }
+    .left{
+      display: none;
+    }
+    ol{
+      padding-left: 0;
+    }
+    button{
+      width: 100%;
+    }
+    .requisites{
+      text-align: end;
+      span{
+        margin: 0 0 20px 0;
+      }
+      input{
+        width: 100%;
+        outline: none;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 569px) and (max-width: 768px){
+  .payment{
+    padding: 20px 80px;
+    .row{
+      justify-content: flex-end;
+    }
+    //.small-screen{
+    //  display: inline;
+    //}
+    .large-screen{
+      display: none;
+    }
+    .row:first-child{
+      flex-wrap: nowrap;
+      flex-direction: column;
+      .amount__text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .amount__input{
+        width: 70%;
+        align-self: flex-end;
+      }
+    }
+    .row{
+      flex-wrap: wrap;
+    }
+    h4{
+      width: 50%;
+      color:  #d9e1ed;
+      border-color: #d9e1ed;
+    }
+    .active{
+      color:  #434a53;
+      border-color: #434a53;
+    }
+    .left,.right{
+      width: 100%;
+    }
+    .left{
+      display: none;
+    }
+    ol{
+      padding-left: 0;
+    }
+    button{
+      width: 100%;
+    }
+    .requisites{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        width: 100%;
+        margin: 0;
+      }
+      input{
+        width: 100%;
+        outline: none;
+      }
+    }
+    .submit_payment{
+      display: flex;
+      justify-content: flex-end;
+      button{
+        width: 52%;
+      }
+    }
+    .links > a:first-child{
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .payment{
+    padding: 20px 40px;
+    .small-screen{
+      display: none;
+    }
+    .row:first-child{
+      flex-wrap: nowrap;
+      flex-direction: column;
+      .amount__text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .amount__input{
+        width: fit-content;
+        align-self: flex-end;
+      }
+    }
+    h4{
+      width: 50%;
+      color:  #434a53;
+      border-color: #434a53;
+      &:first-child{
+        margin-right: 50px;
+      }
+    }
+    .left,.right{
+      width: 50%;
+    }
+    .left:first-child{
+      margin-right: 50px;
+    }
+    ol{
+      padding-left: 0;
+    }
+    button{
+      width: 100%;
+    }
+    .requisites{
+      text-align: end;
+      span{
+        width: 100%;
+        margin: 0;
+      }
+      input{
+        width: 80%;
+        outline: none;
+      }
+    }
+    .submit_payment{
+      display: flex;
+      justify-content: flex-end;
+      button{
+        width: 70%;
+      }
+    }
+    .links > a:first-child{
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .small-screen{
+    display: none!important;
+  }
+}
+

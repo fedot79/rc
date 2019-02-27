@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 6" width="58" height="6">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.4;fill: #434a53 } 
+	</style>
+	<path id="Polygon 1" class="shp0" d="M57,3v-1h-53v1zM0,2.5l3.99,2.5v-5z" />
+</svg>

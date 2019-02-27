@@ -1,0 +1,118 @@
+@import "colors";
+.pjax-content{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin-left: auto;
+}
+.filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  background-color: rgba(249,249,249, 0.4);
+  box-shadow: 0px 10px 21px 0px rgba(0, 0, 0, 0.07);
+  //line-height: 43px;
+  font-size: 12px;
+  font-family: LatoWeb;
+  text-transform: uppercase;
+  //height: 43px;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 55px;
+  width: 100%;
+  margin-top: 30px;
+  align-self: center;
+  flex-wrap: wrap;
+  a{
+    color: #868686;
+    text-decoration: none;
+    //flex-basis: 100%;
+    flex-grow: 1;
+    text-align: center;
+    padding: 12px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid @def_gray;
+
+    &:hover, &.active{
+      //padding-bottom: 11px;
+      color: @mint;
+      border-bottom: 1px solid @mint;
+      //line-height: 41px;
+      //margin-top: 1px;
+    }
+    &.active{
+      cursor: default;
+      pointer-events: none;
+    }
+    span{
+      text-transform: none;
+    }
+  }
+}
+.card-list{
+  position: relative;
+}
+.dropdown{
+  position: absolute;
+  right: 0;
+  width: 140px;
+}
+#filter-top{
+  color: @def_gray;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  &:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 4px solid @def_gray;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    transition: all 0.3s linear;
+  }
+  &.opened{
+    &:before{
+      transform: rotate(180deg);
+      top: 5px;
+    }
+    +ul{
+      display: block;
+    }
+  }
+  +ul{
+    display: none;
+    list-style: none;
+    background: #edf1f5;
+    border-radius: 3px;
+    padding: 0 10px;
+    transition: all .3s linear;
+    li{
+      cursor: pointer;
+      color: @def_gray;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 12px 0;
+      border-bottom: 1px solid #dadfe2;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      &.active, &:hover{
+        font-weight: 800;
+      }
+    }
+  }
+
+}

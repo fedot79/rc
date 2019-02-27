@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" viewBox="0 0 496 496">
+	<style>
+		.st0{fill:#434a53}
+	</style>
+	<path d="M280 392h16v52h-16z" class="st0"/>
+	<path d="M272 496H48a24 24 0 0 1-24-24V120a24 24 0 0 1 24-24h160v16H48a8 8 0 0 0-8 8v352a8 8 0 0 0 8 8h224a8 8 0 0 0 8-8v-40h16v40a24 24 0 0 1-24 24z" class="st0"/>
+	<path fill="#0fa3b1" d="M448 400H224a24 24 0 0 1-24-24V24a24 24 0 0 1 24-24h224a24 24 0 0 1 24 24v352a24 24 0 0 1-24 24z"/>
+</svg>

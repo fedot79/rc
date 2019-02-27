@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1545" height="661">
+    <defs>
+        <filter id="a" width="1545" height="661" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="15" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="4.5"/>
+            <feFlood flood-color="#262626" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".1" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <path fill="#F6F6F6" fill-rule="evenodd" d="M1355.4 5H24a10 10 0 0 0-10 10v580.4c0 5.5 6.9 5.4 10 10 27.2 39.6 127-73 359.1-66 100.5 3 268.8 55.3 429.1 77 141.6 19.2 276.9 9.4 354.2-5.8 293.2-57.6 471.5-198 263.2-502-3.1-4.5-68.7-103.6-74.2-103.6z" filter="url(#a)"/>
+</svg>

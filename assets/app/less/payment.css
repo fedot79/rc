@@ -1,0 +1,60 @@
+.payment {
+  width: 100%;
+  padding: 100px 80px;
+}
+.payment .row {
+  display: flex;
+  justify-content: space-between;
+}
+.payment .row p {
+  font-family: LatoWeb;
+  color: #434a53;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.047px;
+  text-align: left;
+}
+.payment .row .amount-input {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 31px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #434a53;
+  width: 333px;
+  height: 57px;
+}
+.payment .row .amount-input input {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #dee6f1;
+  border-style: solid;
+  background-color: #f6f8fb;
+  width: 127px;
+  height: 33px;
+}
+.payment h4 {
+  margin-top: 87px;
+  font-family: LatoWeb;
+  color: #434a53;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 18px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  width: 40%;
+  text-align: center;
+}
+.payment ol {
+  margin-top: 30px;
+}
+.payment li {
+  margin: 15px 0;
+}
+.payment .submit_payment {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=payment.css.map */

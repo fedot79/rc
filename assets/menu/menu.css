@@ -1,0 +1,297 @@
+#mobile-menu {
+  display: none;
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  background: url(/img/mmenu.svg) no-repeat;
+  top: 0;
+  right: 0;
+  background-position: 50% 50%;
+  background-size: 32px 32px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #mobile-menu {
+    display: block;
+    z-index: 30;
+  }
+}
+#mobile-menu.close {
+  background-image: url(/img/help_close.svg);
+}
+.menu {
+  display: flex;
+  /* 	justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  background-color: #ffffff;
+  position: fixed;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  z-index: 2;
+  transition: width 0.2s ease-in-out;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .menu {
+    left: 100%;
+    width: 100%;
+    transition: left 0.2s ease-in;
+  }
+}
+.menu a,
+.menu span {
+  display: flex;
+  min-height: 67px;
+  align-items: center;
+  width: 100%;
+  color: #434a53;
+  position: relative;
+}
+.menu a.narrow,
+.menu span.narrow {
+  max-height: 30px;
+  min-height: 30px;
+}
+.menu a.mint,
+.menu span.mint {
+  color: #0ea3b1;
+}
+.menu a.mint svg,
+.menu span.mint svg {
+  fill: #0ea3b1;
+}
+.menu a.red,
+.menu span.red {
+  color: #db4848;
+}
+.menu a.red svg,
+.menu span.red svg {
+  fill: #db4848;
+}
+.menu .notify {
+  display: none;
+}
+.menu .full {
+  display: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #0ea3b1;
+  position: relative;
+}
+.menu a:hover svg {
+  fill: #0ea3b1;
+}
+.menu svg {
+  width: 19px;
+  height: 19px;
+  margin-left: 40px;
+  fill: #434a53;
+}
+.menu .left:active {
+  background: #0ea3b1;
+  color: #fff;
+}
+.menu .left:active svg {
+  fill: #fff;
+}
+.menu:hover:not(.mobile-show),
+.menu.mobile-show {
+  width: 230px;
+  display: flex;
+  z-index: 29;
+}
+.menu:hover:not(.mobile-show) .notify,
+.menu.mobile-show .notify {
+  display: flex;
+  position: relative;
+  right: 0;
+  background: #0ea3b1;
+  transform: translate(100%, -50%);
+  flex-direction: column;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: -102px;
+}
+.menu:hover:not(.mobile-show) .notify a,
+.menu.mobile-show .notify a {
+  height: auto;
+  min-height: 0;
+  width: auto;
+  padding: 0 20px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  border-color: #fff;
+}
+.menu:hover:not(.mobile-show) .notify a:hover,
+.menu.mobile-show .notify a:hover {
+  color: #0ea3b1;
+  background: #fff;
+}
+.menu:hover:not(.mobile-show) .red + .notify,
+.menu.mobile-show .red + .notify {
+  background: #db4848;
+}
+.menu:hover:not(.mobile-show) .red + .notify a:hover,
+.menu.mobile-show .red + .notify a:hover {
+  color: #db4848;
+}
+.menu:hover:not(.mobile-show) .full,
+.menu.mobile-show .full {
+  display: inline-block;
+}
+.menu:hover:not(.mobile-show) .min,
+.menu.mobile-show .min {
+  display: none;
+}
+.menu:hover:not(.mobile-show) .left,
+.menu.mobile-show .left {
+  align-self: flex-start;
+  padding-left: 40px;
+}
+.menu:hover:not(.mobile-show) .left .full,
+.menu.mobile-show .left .full {
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 200;
+}
+.menu:hover:not(.mobile-show) a.left:hover::before,
+.menu.mobile-show a.left:hover::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #0ea3b1;
+}
+.menu:hover:not(.mobile-show) svg,
+.menu.mobile-show svg {
+  margin-left: 0;
+  margin-right: 0;
+}
+.menu:hover:not(.mobile-show).mobile-show,
+.menu.mobile-show.mobile-show {
+  width: 100%;
+}
+.menu .logo {
+  height: 100px;
+  align-self: center;
+}
+.menu .logo .min {
+  width: 52px;
+  height: 50px;
+  margin: auto;
+  margin-left: 28px;
+}
+.menu .logo .full {
+  width: 163px;
+  height: 50px;
+  margin: auto;
+  margin-left: 27px;
+}
+.menu .user {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.menu .user img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.menu .user a svg {
+  fill: #434a53;
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+}
+.menu .user a:hover svg {
+  fill: #0ea3b1;
+}
+.menu .user .full {
+  margin: 20px auto 0 auto;
+}
+.menu .menu-mobile {
+  display: none;
+}
+.menu .branding {
+  color: #0ea3b1;
+}
+.menu .branding svg {
+  fill: #0ea3b1;
+}
+.menu.mobile-show {
+  transition: left 0.2s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  min-height: 100%;
+}
+.menu.mobile-show .left {
+  width: 100%;
+  align-self: flex-end;
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.menu.mobile-show .left svg {
+  margin-right: 30px;
+}
+.menu.mobile-show .left .full {
+  margin-left: auto;
+  margin-right: 30px;
+}
+.menu.mobile-show .user {
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+}
+.menu.mobile-show .user img {
+  width: 80px;
+  height: 80px;
+  margin: auto 20px auto auto;
+}
+.menu.mobile-show .user .full {
+  margin: auto auto auto 20px;
+  font-size: 20px;
+}
+.menu.mobile-show .user .full p {
+  margin: 0;
+}
+.menu.mobile-show .left .full {
+  font-size: 18px;
+}
+.menu.mobile-show .menu-mobile {
+  display: flex;
+}
+.menu.mobile-show .logo {
+  height: 78px;
+}
+.menu.mobile-show > span {
+  pointer-events: none;
+}
+.menu:hover:not(.mobile-show) .left,
+.menu:hover:not(.mobile-show) .logo {
+  width: 230px;
+  align-self: flex-start;
+}
+@media (max-width: 768px) {
+  nav.top-nav a,
+  nav.top-nav button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

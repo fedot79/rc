@@ -1,0 +1,223 @@
+.intro {
+  display: block;
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+}
+.intro video {
+  width: 534px;
+  height: 267px;
+}
+.intro-click {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url(/img/slider_next.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 90px;
+  height: 100%;
+  background-position: 0 50%;
+}
+.intro-click.next {
+  right: -90px;
+  transform: translate(0, -50%) rotate(180deg);
+}
+.intro-click.prev {
+  left: -90px;
+}
+.intro-click.done {
+  background-position: 100% 50%;
+  background-image: url(/img/slider_done.svg);
+  transform: translate(0, -50%);
+}
+.intro-close-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  content: '';
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-image: url(/img/help_close.svg);
+  background-size: 15px 15px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.intro-frame {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.intro-frame.active {
+  display: flex;
+}
+.intro-frame h2 {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.intro-frame .button-common {
+  border-width: 1px;
+  border-color: #434a53;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 0 30px;
+  line-height: 28px;
+  color: #434a53;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: 66px;
+}
+.intro-frame .button-common:hover {
+  background: #434a53;
+  color: #fff;
+}
+.intro-frame .intro-close {
+  font-size: 10px;
+  color: #a2a7ae;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+.intro-frame .intro-close:hover {
+  color: #0ea3b1;
+}
+.intro-frame p {
+  padding: 0 40px 0 50px;
+  align-self: flex-start;
+}
+.intro-frame p.bullet {
+  padding-left: 70px;
+}
+.intro-frame p.bullet:before {
+  content: '•';
+  margin-left: -20px;
+  padding-right: 20px;
+  display: inline-block;
+  width: 8px;
+}
+.intro-frame img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.intro-frame video {
+  margin-bottom: 20px;
+}
+.intro-1 .intro-close {
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+}
+.intro-1 h2 {
+  margin-top: -40px;
+}
+.intro-1 img {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  width: 413px;
+}
+.intro-1 .button-common {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.intro-1 .intro-close {
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+.intro-pager {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+  width: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.intro-pager .dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #434a53;
+  border-radius: 50%;
+}
+.intro-pager .dot.active {
+  background: #434a53;
+}
+.mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mob {
+    display: block;
+  }
+  .desc {
+    display: none;
+  }
+  .intro-here .wrap {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .intro-here .full-wrapper {
+    padding: 10px;
+  }
+  .intro-here .intro {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    height: auto;
+  }
+  .intro-here .intro video {
+    width: 100%;
+  }
+  .intro-here .intro-frame {
+    padding: 10px;
+    min-height: 110vw;
+  }
+  .intro-here .intro-frame img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .intro-here .intro-frame .button-common {
+    margin-bottom: 32px;
+  }
+  .intro-here .intro-1 {
+    text-align: center;
+  }
+  .intro-here .intro-1 img {
+    margin-top: 70px;
+    width: 90%;
+  }
+  .intro-here .intro-1 h2 {
+    max-width: 220px;
+  }
+  .intro-here .intro-1 .button-common {
+    margin-bottom: 0;
+  }
+  .intro-here .intro-click.next {
+    display: none;
+  }
+  .intro-here .intro-pager {
+    bottom: 20px;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

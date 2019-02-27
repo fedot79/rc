@@ -1,0 +1,125 @@
+.top-nav h1.massive {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+span.feed-info {
+  padding-left: 20px;
+  margin-bottom: -3px;
+}
+@media (max-width: 568px) {
+  span.feed-info {
+    margin-left: 16px;
+  }
+}
+.card.success:after {
+  background-image: url(/img/correct-symbol.svg);
+  background-position: 50% 50%;
+  background-size: 8px 8px;
+  background-repeat: no-repeat;
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #0ea3b1;
+  border-radius: 50%;
+}
+.card.failed,
+.card.double {
+  box-shadow: 10px 15px 20px 0px rgba(214, 67, 55, 0.5);
+}
+.card.failed:after,
+.card.double:after {
+  background-image: url(/img/sthop.svg);
+  background-position: 50% 50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #d64337;
+  border-radius: 50%;
+}
+.card.failed .list-par,
+.card.double .list-par {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.card.failed .list-address,
+.card.double .list-address {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.card.failed .list-object,
+.card.double .list-object {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.card.failed h2,
+.card.double h2 {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+.card.double:after {
+  background-image: url(/img/copy.svg);
+  background-size: 100% 100%;
+}
+.card .card-hover p {
+  height: 45px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+.card .card-hover p.success {
+  position: absolute;
+  bottom: 0;
+  background: #e9f7f8;
+  color: #0fa3b1;
+}
+.card .card-hover p.success:before {
+  background-image: url(/img/successfull.svg);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  content: ' ';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+.card .card-hover p.failed,
+.card .card-hover p.double {
+  position: absolute;
+  bottom: 0;
+  color: #d64337;
+  background: #fbeceb;
+}
+.card .card-hover p.failed:before,
+.card .card-hover p.double:before {
+  background-image: url(/img/exclamation-mark.svg);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  content: ' ';
+  margin-right: 15px;
+  vertical-align: middle;
+  margin-top: -2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+/*# sourceMappingURL=feed-check.css.map */

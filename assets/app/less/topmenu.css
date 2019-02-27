@@ -1,0 +1,30 @@
+.top-menu {
+  padding-left: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #434a53;
+  margin-right: auto;
+}
+.top-menu a {
+  padding: 0 23px;
+  border-right: 1px solid #0ea3b1;
+  color: #434a53;
+  text-decoration: none;
+}
+.top-menu a:hover {
+  color: #0ea3b1;
+  text-decoration: none;
+}
+.top-menu a:last-child {
+  border: none;
+}
+.top-menu span {
+  padding: 0 23px;
+  font-family: Gilroy;
+  font-weight: 800;
+  border-right: 1px solid #0ea3b1;
+}
+.top-menu span:last-child {
+  border: none;
+}
+/*# sourceMappingURL=topmenu.css.map */

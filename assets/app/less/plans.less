@@ -1,0 +1,125 @@
+@import "colors";
+@import 'mediaquery';
+#container.plans{
+  padding-left: 100px;
+}
+.col1{
+  width: 60%;
+  padding-right: 20px;
+}
+.col2{
+  width: 40%;
+  padding-left: 20px;
+  table{
+    width: 100%;
+    table-layout: fixed;
+    thead{
+      th{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 10px;
+        padding-bottom: 14px;
+        text-align: center;
+      }
+    }
+    tbody{
+      tr:first-child{
+        td:first-child{
+          border-radius: 5px 0 0 0;
+        }
+        td:last-of-type{
+          border-radius: 0 5px 0 0;
+        }
+      }
+      tr:last-of-type{
+        td:first-of-type{
+          border-radius: 0 0 0 5px;
+        }
+        td:last-of-type{
+          border-radius: 0 0 5px 0;
+        }
+      }
+      td{
+        border: 1px solid #dbdfe1;
+        text-align: center;
+        padding: 7px 0;
+        font-size: 12px;
+        font-family: LatoWeb, sans-serif;
+        color: #434a53;
+      }
+    }
+  }
+}
+#email-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #dbdfe1;
+  line-height: 28px;
+  margin-right: 34px;
+  &::placeholder{
+    font-style: italic;
+    color: #969fab;
+    opacity: 1;
+  }
+}
+.input-email{
+  margin-top: 45px;
+  margin-bottom: 45px;
+  &.error{
+    #email-input{
+      border-bottom-color: #A75656;
+    }
+  }
+}
+color{
+  display: inline;
+  color: #0fa3b1;
+  font-weight: 600;
+}
+
+.button-common {
+  border-radius: 5px;
+  border-color: #434a53;
+  font-size: 10px;
+  width: auto;
+  padding: 0 50px;
+  color: #434a53;
+  line-height: 28px;
+  &:hover{
+    background-color: #434a53;
+    color: #fff;
+    border-color: #434a53;
+  }
+  &.success{
+    pointer-events: none;
+    border: none;
+    color: #0fa3b1;
+  }
+}
+h2{
+  font-size: 18px;
+  font-family: Gilroy;
+  font-weight: 800;
+  color: #434a53;
+}
+
+#container.plans{
+  .mobile({
+    padding-left: 0;
+    .col{
+      width: 100%;
+      padding: 20px;
+    }
+    .input-email{
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+    }
+    #email-input{
+      margin: 0 auto;
+    }
+    .button-common{
+      margin: 10px auto 0;
+    }
+  })
+}

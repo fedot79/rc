@@ -1,0 +1,34 @@
+.slider {
+  width: 300px;
+}
+.slider > .dragger {
+  width: 16px;
+  height: 16px;
+  padding: 18px;
+  top: 0 !important;
+  transform: translateX(-12px);
+}
+.slider > .dragger:after {
+  display: block;
+  content: '';
+  background: #0e9eab;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  top: -10px;
+  position: relative;
+  left: -9px;
+}
+.slider > .track {
+  height: 16px;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(174, 178, 182, 0) 41%, #b1b4b7 42%, #b1b4b7 58%, rgba(176, 180, 184, 0) 59%, rgba(125, 185, 232, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001e5799', endColorstr='#007db9e8', GradientType=0);
+  background-position: 50% 50%;
+}
+.slider > .highlight-track {
+  background-color: #0e9eab;
+  height: 4px;
+  margin-top: -2px !important;
+}
+/*# sourceMappingURL=slider.css.map */

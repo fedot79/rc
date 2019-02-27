@@ -1,0 +1,3 @@
+<svg id="map-zoom.svg" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 683 683">
+    <path d="M0 0v228h57V57h171V0zM0 455v228h228v-57H57V455zM626 455v171H455v57h228V455zM455 0v57h171v171h57V0z"/>
+</svg>

@@ -1,0 +1,214 @@
+footer {
+    background-color: #474b53;  
+}
+.footer-bg {
+    background: url("../img/footer-bg.png");
+    background-repeat-y: no-repeat;
+    background-position-y: bottom;
+}
+.footer {
+    position: relative;
+    padding: 36px 102px 10px 88px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &__name {
+        display: flex;
+        align-items: center;
+        width: 36%;
+    }
+    &__text {
+        font-size: 60px;
+        font-family: "Gilroy", Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    &__circle {
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        padding: 0 22px;
+    }
+    &__description {
+        width: 42%;
+        padding-left: 16px;
+    }
+    &__title {
+        font-size: 18px;
+        font-family: "Gilroy", Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    &__logo {
+        width: 22%;
+        text-align: right;
+        svg {
+            fill: #fff;
+        }
+    }
+    &__login {
+        width: 22%;
+        padding-left: 11%;
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding-bottom: 92px;
+        a {
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        span {
+            padding: 0 5px;
+        }
+    }
+    &__menu {
+        width: 42%;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 23px;
+        padding-left: 16px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            white-space: nowrap;
+    
+        }
+        a {
+            display: block;
+            color: #fff;
+            padding-bottom: 21px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__partners {
+        position: absolute;
+        right: 99px;
+        bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        svg {
+            fill: #686e78;
+        }
+    }
+}
+.logo--white {
+    width: 227px;
+    margin-top: 18px;
+}
+.circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+.social {
+    display: flex;
+    align-items: center;
+    width: 36%;
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        min-width: 38%;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    svg {
+        fill: #fff;
+
+    }
+    &__contacts {
+        flex-grow: 1;
+        text-align: center;
+        padding-right: 65px;
+        a {
+            display: block;
+            color: #fff;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+.phone {
+    font-size: 18px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+.mail {
+    font-size: 14px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-bottom: 1px dotted #fff;
+}
+.tinkoff {
+    width: 123px;
+    height: 22px;
+}
+.pay {
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 18px;
+    svg {
+        max-height: 38px;
+    }
+}
+.mastercard {
+    fill: #676e77;
+    width: 30px;
+    // height: 29px;
+}
+.visa {
+    fill: #676e77;
+    width: 63px;
+    // height: 42px;
+}
+.mir {
+    fill: #6d6d6d;
+    width: 38px;
+    // height: 11px;
+}
+.rights {
+    width: 100%;
+    padding-top: 15px;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff;
+    padding: 0 102px 10px 88px;
+}
+.circle768 {
+    display: none;
+}

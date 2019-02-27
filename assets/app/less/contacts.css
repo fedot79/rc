@@ -1,0 +1,28 @@
+#container.contacts {
+  margin-top: 0;
+  height: 100%;
+  margin-bottom: 0;
+  color: #434a53;
+}
+#container.contacts .full-width {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#container.contacts #map {
+  margin-top: 40px;
+  position: relative;
+  height: 100%;
+}
+#container.contacts p {
+  margin-left: 37px;
+}
+#container.contacts p svg {
+  max-width: 18px;
+  max-height: 18px;
+  fill: #0ea3b1;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=contacts.css.map */

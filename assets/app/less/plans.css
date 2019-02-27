@@ -1,0 +1,112 @@
+#container.plans {
+  padding-left: 100px;
+}
+.col1 {
+  width: 60%;
+  padding-right: 20px;
+}
+.col2 {
+  width: 40%;
+  padding-left: 20px;
+}
+.col2 table {
+  width: 100%;
+  table-layout: fixed;
+}
+.col2 table thead th {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+.col2 table tbody tr:first-child td:first-child {
+  border-radius: 5px 0 0 0;
+}
+.col2 table tbody tr:first-child td:last-of-type {
+  border-radius: 0 5px 0 0;
+}
+.col2 table tbody tr:last-of-type td:first-of-type {
+  border-radius: 0 0 0 5px;
+}
+.col2 table tbody tr:last-of-type td:last-of-type {
+  border-radius: 0 0 5px 0;
+}
+.col2 table tbody td {
+  border: 1px solid #dbdfe1;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 12px;
+  font-family: LatoWeb, sans-serif;
+  color: #434a53;
+}
+#email-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #dbdfe1;
+  line-height: 28px;
+  margin-right: 34px;
+}
+#email-input::placeholder {
+  font-style: italic;
+  color: #969fab;
+  opacity: 1;
+}
+.input-email {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.input-email.error #email-input {
+  border-bottom-color: #A75656;
+}
+color {
+  display: inline;
+  color: #0fa3b1;
+  font-weight: 600;
+}
+.button-common {
+  border-radius: 5px;
+  border-color: #434a53;
+  font-size: 10px;
+  width: auto;
+  padding: 0 50px;
+  color: #434a53;
+  line-height: 28px;
+}
+.button-common:hover {
+  background-color: #434a53;
+  color: #fff;
+  border-color: #434a53;
+}
+.button-common.success {
+  pointer-events: none;
+  border: none;
+  color: #0fa3b1;
+}
+h2 {
+  font-size: 18px;
+  font-family: Gilroy;
+  font-weight: 800;
+  color: #434a53;
+}
+@media only screen and (max-width: 666px) {
+  #container.plans {
+    padding-left: 0;
+  }
+  #container.plans .col {
+    width: 100%;
+    padding: 20px;
+  }
+  #container.plans .input-email {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+  }
+  #container.plans #email-input {
+    margin: 0 auto;
+  }
+  #container.plans .button-common {
+    margin: 10px auto 0;
+  }
+}
+/*# sourceMappingURL=plans.css.map */

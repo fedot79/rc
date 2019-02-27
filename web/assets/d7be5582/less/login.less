@@ -1,0 +1,419 @@
+@import "reset.css";
+@import 'flags.css';
+@import 'prettydown.css';
+@import "fonts.less";
+//@import "../";
+@mint : #0fa3b1;
+@navy : #0a3a51;
+@navy-b : #091e2c;
+@navy-b05 : rgba(9, 30, 44, 0.5);
+@error: #c22d37;
+@a-error: rgba(194, 45, 55, 0.5);
+@a-error09: rgba(194, 45, 55, 0.95);
+@white08: rgba(255,255,255,0.8);
+@white04: rgba(255,255,255,0.4);
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+svg{
+  pointer-events: none;
+}
+input{
+  padding: 0;
+}
+input:focus{
+  outline: none;
+}
+input::-moz-focus-outer, input::-moz-focus-inner {
+  border: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,0) inset;
+}
+body{
+  //background-image: url(/img/bkg.jpg);
+  //background-size: cover;
+  background-color: #0fa3b1;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: LatoWeb;
+  color:@white08;
+  height: 100%;
+  margin: 0;
+  min-height: 700px;
+  min-width: 1550;
+}
+.wrapper{
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  height: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+}
+body.login{
+  .content{
+    width: 264px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#logo{
+  width: 100%;
+  //height: 72px;
+  margin: 0 auto;
+}
+form{
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: LatoWebLight;
+}
+label{
+  margin-top: 52px;
+  position: relative;
+  width: 100%;
+  input{
+    line-height: 18px;
+    font-size: 18px;
+    font-family: LatoWebLight;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    width: 100%;
+    margin: 0;
+    background: none;
+    color: #fff;
+    position: relative;
+    padding-bottom: 16px;
+  }
+  &.phone{
+    display: flex;
+    align-items: start;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    padding-bottom: 16px;
+    position: relative;
+    span{
+      font-size: 18px;
+      font-family: LatoWebLight;
+      //padding-bottom: 16px;
+      color: rgba(255,255,255,.5);
+    }
+    svg{
+      position: absolute;
+      width: 16px;
+      fill: rgba(255,255,255,0.5);
+      top: 1px;
+      right: 5px;
+    }
+    input{
+      margin-left: 6px;
+      display: block;
+      border-radius: unset;
+      border: none;
+      line-height: inherit;
+      padding-bottom: 0;
+    }
+    .error-msg{
+      display: none;
+    }
+    &.error{
+      input{
+        border-color: @error;
+      }
+      .error-msg{
+        display: inline-block;
+      }
+      p.error-msg{
+        position: absolute;
+        width: auto;
+        max-width: 100%;
+        color: @error;
+        font-size: 14px;
+        padding-left: 0px;
+        //top: 0;
+        bottom: 40px;
+        //white-space: nowrap;
+        //right: -158px;
+        left: 0;
+      }
+    }
+  }
+  &.password{
+    span{
+      position: absolute;
+      line-height: 18px;
+      font-size: 18px;
+      font-family: LatoWebLight;
+      color: rgba(255,255,255,.5);
+      top: 0;
+      left: 0;
+      transform: translate(0,0);
+      transition: transform ease-in .1s, font-size ease-in .1s;
+      &.top{
+        font-size: 10px;
+        transform: translate(0,-24px);
+        transition: transform ease-in .1s, font-size ease-in .1s;
+      }
+    }
+    svg, p.error-msg{
+      display: none;
+    }
+    &.error{
+      input{
+        border-color: @error;
+      }
+      svg, p.error-msg{
+        display: inline-block;
+      }
+      p.error-msg{
+        position: absolute;
+        width: auto;
+        color: @error;
+        font-size: 16px;
+        padding-left: 30px;
+        top: 0;
+        white-space: nowrap;
+        right: -158px;
+      }
+      svg.error-msg{
+        fill: rgba(255,255,255,0.4);
+        position: absolute;
+        top: -13px;
+        width: 178px;
+        height: 52px;
+        right: -178px;
+      }
+    }
+  }
+  &.name{
+    span{
+      position: absolute;
+      line-height: 18px;
+      font-size: 18px;
+      font-family: LatoWebLight;
+      color: rgba(255,255,255,.5);
+      top: 0;
+      left: 0;
+      transform: translate(0,0);
+      transition: transform ease-in .1s, font-size ease-in .1s;
+      &.top{
+        font-size: 10px;
+        transform: translate(0,-24px);
+        transition: transform ease-in .1s, font-size ease-in .1s;
+      }
+    }
+    svg, p.error-msg{
+      display: none;
+    }
+    &.error{
+      input{
+        border-color: @error;
+      }
+      svg, p.error-msg{
+        display: inline-block;
+      }
+      p.error-msg{
+        position: absolute;
+        width: auto;
+        color: @error;
+        font-size: 16px;
+        padding-left: 30px;
+        top: 0;
+        white-space: nowrap;
+        right: -189px;
+      }
+      svg.error-msg{
+        fill: rgba(255,255,255,0.4);
+        position: absolute;
+        top: -13px;
+        width: 178px;
+        height: 52px;
+        right: -178px;
+      }
+    }
+  }
+  &.sms{
+    text-align: center;
+    margin-top: 72px;
+    p{
+      width: 400px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      &.txt{
+        top: -40px;
+      }
+      &.new{
+        bottom: -60px;
+      }
+    }
+    .pincode-input-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .pincode-input-text{
+        background: none;
+        width: 19px;
+        text-align: center;
+        padding-bottom: 8px;
+        margin: 0 4px;
+      }
+      &.touch{
+        .pincode-input-text{
+          //border: none;
+          width: 59px;
+          border-radius: 0;
+        }
+        //.touchtable{
+        //  width: 100%;
+        //  td{
+        //    border-bottom: 1px solid #fff;
+        //  }
+        //}
+      }
+      &.error{
+        .pincode-input-text{
+          color: @error;
+        }
+      }
+    }
+  }
+}
+button{
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 10px;
+  -webkit-appearance: none;
+  background: none;
+  font-size: 16px;
+  color: #fff;
+  font-family: LatoWebBlack;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 19px;
+  width: 100%;
+  line-height: 50px;
+  &:hover{
+    color: @mint;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+
+pre.probe{
+  font-size: 18px;
+  font-family: LatoWebLight;
+  border: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  top: 0;
+  opacity: 0;
+}
+input:focus{
+  outline: none;
+}
+input::-moz-focus-outer, input::-moz-focus-inner {
+  border: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,0) inset;
+}
+
+#confirm{
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 17px;
+}
+
+.prettydropdown.arrow > ul > li.selected::before{
+  display: none;
+}
+#prettydropdown-country{
+  min-width: 0;
+  width: 45px !important;
+}
+
+.type-p{
+  display: flex;
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  flex-direction: column;
+  margin-top: 30px;
+  .type{
+    display: flex;
+    margin-top: 0;
+  }
+  input{
+    width: auto;
+    margin-right: 6px;
+  }
+  input:checked+span{
+    color: #fff;
+  }
+  .error-msg{
+    display: none;
+  }
+}
+
+span.dlink{
+  border-bottom: 1px dotted rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.new-pass{
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  body{
+    min-height: auto;
+  }
+  .wrapper{
+    align-items: flex-start;
+  }
+
+  body.login .content{
+    margin-top: 20%;
+  }
+  #logo{
+    width: 70%;
+  }
+  label.password.error p.error-msg{
+    position: relative;
+    width: 100%;
+    right: 0;
+    padding: 0;
+    text-align: center;
+  }
+  label.password.error svg.error-msg{
+    display: none;
+  }
+}
+
+.def-link{
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}

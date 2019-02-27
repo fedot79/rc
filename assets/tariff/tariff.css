@@ -1,0 +1,613 @@
+.plan {
+  padding-left: 0;
+  margin-left: 100px;
+}
+.plans {
+  font-size: 14px;
+  justify-content: space-between !important;
+}
+.plans .table {
+  flex-basis: 319px;
+  flex-shrink: 0;
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+.plans .table dl {
+  line-height: 25px;
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  max-height: 700px;
+  transition: max-height 0.3s;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.plans .table dl > .dl-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: Gilroy;
+}
+.plans .table dl.closed {
+  max-height: 430px;
+  transition: max-height 0.3s;
+}
+.plans .table dl.closed + .click {
+  height: 101px;
+  margin-top: -80px;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(247, 249, 249, 0) 0%, #f7f9f9 100%);
+}
+.plans .table dl.closed + .click svg {
+  transform: rotate(-90deg);
+  transition: transform .3s, bottom .3s;
+  bottom: 0;
+  top: 80px;
+}
+.plans .table .click {
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.plans .table .click svg {
+  transform: rotate(90deg);
+  width: 13px;
+  height: 13px;
+  transform-origin: 50% 50%;
+  transition: transform .3s, bottom .3s;
+  position: absolute;
+  left: 149px;
+}
+.plans .table dt {
+  width: 49%;
+  padding-right: 18px;
+  text-align: right;
+  border-right: 1px solid #434a53;
+  font-size: 14px;
+  line-height: 25px;
+  position: relative;
+}
+.plans .table dt:after {
+  content: '';
+  display: block;
+  background: #434a53;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  right: -3px;
+  top: 8px;
+}
+.plans .table dt.dl-header:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 12px;
+  border-right: 1px solid #f7f9f9;
+  position: absolute;
+  right: -1px;
+  top: 0;
+}
+.plans .table dt.dl-header:after {
+  width: 11px;
+  height: 11px;
+  top: 6px;
+  right: -6px;
+}
+.plans .table dd {
+  width: 49%;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 25px;
+}
+p.showprice {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: -50px;
+}
+.tarif {
+  padding-left: 80px;
+  color: #434a53;
+  flex-basis: 470px;
+  min-height: 690px;
+  margin-left: 80px;
+}
+.tarif h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.tarif p {
+  margin-bottom: 30px;
+}
+.tarif strong {
+  margin-top: 45px;
+}
+.tarif em {
+  margin-top: 45px;
+  display: block;
+  color: #434a53;
+}
+.tarif .bubble {
+  background: #e6e7e9;
+  border-radius: 26.5px;
+  color: #434a53;
+  font-size: 14px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  padding: 19px 20px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+}
+.tarif .bubble .arrow {
+  flex-grow: 1;
+  border-color: #434a53;
+  margin: 0 15px;
+  position: relative;
+}
+.tarif .bubble .arrow:after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.6px 6px;
+  border-color: transparent transparent transparent #434a53;
+}
+.tarif .flex-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+.tarif .flex-right {
+  align-items: end;
+}
+.tarif .links a {
+  margin-top: 5px;
+  color: #434a53;
+}
+.tarif .links a:hover {
+  text-decoration: none;
+  color: #0ea3b1;
+  border-color: #0ea3b1;
+}
+.button-color {
+  color: #0ea3b1;
+  border-color: #0ea3b1;
+}
+.button-color:hover {
+  color: #091e2c;
+  border-color: #091e2c;
+}
+a > .arrow {
+  border-color: #434a53;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  margin-left: 5px;
+  border-top: 1px solid;
+  height: 0.3em;
+}
+a > .arrow:after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.6px 6px;
+  border-color: transparent transparent transparent #434a53;
+}
+a:hover > .arrow {
+  border-color: #0fa3b1;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  margin-left: 5px;
+  border-top: 1px solid;
+  height: 0.3em;
+}
+a:hover > .arrow:after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5px 0 2.6px 6px;
+  border-color: transparent transparent transparent #0fa3b1;
+}
+.tarif.retailer {
+  padding-right: 80px;
+  border-right: 1px solid #434a53;
+  border-left: none;
+  min-width: 800px;
+}
+.plan {
+  flex-basis: 400px;
+  padding-left: 50px;
+}
+.plan h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.plan p {
+  margin-bottom: 40px;
+}
+.plan .plan-con {
+  margin-top: 35px;
+  padding-left: 50px;
+  background-size: 36px 62px;
+  min-height: 62px;
+  background-repeat: no-repeat;
+  max-width: 300px;
+}
+.plan .plan-con:nth-of-type(1) {
+  background-image: url(/img/plan-con1.svg);
+}
+.plan .plan-con:nth-of-type(2) {
+  background-image: url(/img/plan-con3.svg);
+}
+.plan .plan-con:nth-of-type(3) {
+  background-image: url(/img/plan-con2.svg);
+}
+.plan .plan-con:nth-of-type(4) {
+  background-image: url(/img/plan-con4.svg);
+}
+.plan a {
+  margin-top: 45px;
+}
+p.plan-name {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: Gilroy;
+}
+#container.tariff {
+  justify-content: center;
+  padding-left: 50px;
+}
+#container.tariff .tariff_list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+#container.tariff .top-row {
+  margin-bottom: 60px;
+  position: relative;
+}
+#container.tariff .show-counter {
+  position: absolute;
+  right: 37px;
+  top: 0;
+  font-weight: 200;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #0ea3b1;
+}
+#container.tariff .tariffs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1070px;
+  margin: 0 auto;
+}
+#container.tariff .tariff_card {
+  min-width: 305px;
+  max-width: 350px;
+  text-align: center;
+}
+#container.tariff .tariff_card:nth-of-type(2) {
+  flex-grow: 1;
+}
+#container.tariff .tariff_card:nth-of-type(2) svg {
+  width: 223px;
+  height: 176px;
+}
+#container.tariff .tariff_card.bought .img {
+  background-color: rgba(15, 163, 177, 0.1);
+}
+#container.tariff .tariff_card.bought svg {
+  fill: #0fa3b1;
+}
+#container.tariff .tariff_card.bought .plan-name,
+#container.tariff .tariff_card.bought .showprice {
+  color: #0fa3b1;
+}
+#container.tariff .tariff_card .button-common {
+  width: 100%;
+  max-width: 305px;
+}
+#container.tariff .img {
+  width: 100%;
+  margin-top: auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-top: 100%;
+  margin-bottom: 40px;
+}
+#container.tariff .img svg {
+  position: absolute;
+  width: 111px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#container.tariff .img svg + svg {
+  bottom: 56px;
+  left: 55%;
+  opacity: 0;
+}
+.tariff_form .left {
+  max-width: 400px;
+  padding-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.tariff_form h2 {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.tariff_form strong {
+  font-size: 18px;
+  font-family: Gilroy;
+  font-weight: 800;
+  margin: 0;
+}
+.tariff_form .popolnenie {
+  box-shadow: none;
+  background: none;
+  border-left: 1px solid #434a53;
+  border-radius: 0;
+}
+.tariff_form .popolnenie p:first-child {
+  margin-top: 0;
+}
+.tariff_form .popolnenie input.payment {
+  background: none !important;
+  margin-right: 5px;
+  border: solid 1px #b4b7ba;
+  border-radius: 10px;
+  width: 128px;
+  height: 41px;
+  padding: 0 10px;
+}
+.tariff_form .popolnenie .amount {
+  margin-top: initial;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tariff_form .popolnenie .amount p {
+  margin-top: initial;
+  text-transform: uppercase;
+}
+.tariff_form .popolnenie .amount label {
+  margin-top: initial;
+  font-weight: 400;
+  line-height: 41px;
+}
+.tariff_form .popolnenie .bot-payment {
+  justify-content: flex-end;
+}
+.tariff_form .popolnenie .bot-payment input[type=submit] {
+  margin-right: 0;
+}
+.tariff_form .popolnenie .bot-payment .button-common:hover {
+  color: #fff;
+  background: #0ea3b1;
+}
+@media (min-width: 1024px) {
+  .plan {
+    padding-left: 0px;
+    min-width: 300px;
+  }
+  .tarif {
+    margin-left: 26px;
+    padding-left: 26px;
+    min-width: 331px;
+  }
+  .tarif .bubble {
+    font-size: 12px;
+    width: 308px;
+  }
+  .plans .table {
+    margin-left: 10px;
+    margin-top: 0px;
+    flex-shrink: unset;
+  }
+  .plans .table .click svg {
+    width: 13px;
+    left: calc(49% - 7px);
+  }
+  .tarif h2 {
+    margin-bottom: 29px;
+  }
+}
+@media (min-width: 320px) and (max-width: 567px) {
+  .plan {
+    width: 320px;
+    padding: 0px 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tarif {
+    border: none;
+    width: 320px;
+    padding: 0px 20px;
+    margin: 100px auto 0px auto;
+  }
+  .plans .table {
+    width: 320px;
+    padding: 0px 20px;
+    margin: 120px auto;
+  }
+  .plans .table .click svg {
+    left: 130px;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+  .plan {
+    width: 568px;
+    padding: 0px 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plan .plan-con:nth-of-type(1),
+  .plan .plan-con:nth-of-type(4) {
+    padding: 10px 70px;
+  }
+  .plan .plan-con:nth-of-type(2),
+  .plan .plan-con:nth-of-type(3) {
+    padding: 0px 70px;
+    line-height: 62px;
+  }
+  .plan .plan-con {
+    max-width: 568px;
+  }
+  .plan a {
+    width: 268px;
+  }
+  .tarif {
+    border: none;
+    width: 568px;
+    padding: 0px 40px;
+    margin: 100px auto 0px auto;
+  }
+  .plans .table {
+    width: 320px;
+    padding: 0px 20px;
+    margin: 60px auto 180px auto;
+  }
+  .plans .table .click svg {
+    left: 130px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .plans {
+    flex-flow: row wrap !important;
+  }
+  .plan {
+    min-width: 768px;
+    width: 568px;
+    padding: 0px 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plan .plan-con:nth-of-type(1),
+  .plan .plan-con:nth-of-type(4) {
+    padding: 10px 70px;
+  }
+  .plan .plan-con:nth-of-type(2),
+  .plan .plan-con:nth-of-type(3) {
+    padding: 0px 70px;
+    line-height: 62px;
+  }
+  .plan .plan-con {
+    max-width: 568px;
+  }
+  .plan a {
+    width: 268px;
+  }
+  .tarif {
+    border: none;
+    width: 440px;
+    padding: 0px 40px;
+    flex-basis: 440px;
+    margin: 100px 0 0 0;
+  }
+  .plans .table {
+    width: 320px;
+    padding: 0px 20px;
+    margin: 100px 0 0 0;
+  }
+  .plans .table .click svg {
+    left: 130px;
+  }
+}
+@media (max-width: 1400px) {
+  #container.tariff .tariffs {
+    width: 100%;
+    justify-content: space-around;
+  }
+  #container.tariff .tariff_card {
+    min-width: 282px;
+    max-width: 313px;
+  }
+}
+@media (max-width: 1300px) {
+  #container.tariff .tariff_card {
+    min-width: 262px;
+    max-width: 278px;
+  }
+  #container.tariff .img svg {
+    width: 70%;
+    bottom: 50px;
+    height: auto;
+  }
+}
+@media (max-width: 1100px) {
+  #container.tariff .tariff_card {
+    min-width: 220px;
+    max-width: 260px;
+  }
+  #container.tariff .tariff_card p {
+    font-size: 16px;
+  }
+  #container.tariff .tariff_card:nth-of-type(2) svg {
+    width: 70%;
+    height: auto;
+  }
+  #container.tariff .img svg {
+    width: 60%;
+    bottom: 50px;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  #container.tariff .tariffs {
+    align-items: center;
+    flex-direction: column;
+  }
+  #container.tariff .top-row {
+    margin-bottom: 30px;
+  }
+  #container.tariff .tariff_card p {
+    margin-bottom: 0;
+  }
+  #container.tariff .tariff_card .img {
+    margin-bottom: 10px;
+  }
+  #container.tariff .tariff_card .button-common {
+    margin-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=tariff.css.map */

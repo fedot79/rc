@@ -1,0 +1,134 @@
+#container.create{
+  input[type=text]{
+    background: none;
+    border: none;
+    font-weight: 400;
+    text-align: center;
+  }
+  .card-new{
+    margin-right: auto;
+    &.zoom-map{
+      .card-map{
+        &.has-error{
+          position: absolute;
+          .error-msg{
+            right: 50%;
+            top: 60px;
+            transform: translate(100%, 0);
+            &:before{
+              border-right: 10px solid transparent;
+              border-bottom: 10px solid #FFA6A6;
+              border-left: 10px solid transparent;
+              top: -10px;
+              left: 41%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .card-deal{
+    label{
+      cursor: pointer;
+      &.no-choose{
+        opacity: 0.4;
+        &:hover{
+          opacity: 1;
+        }
+      }
+      //font-size: 0;
+      //input{
+      //  display: none;
+      //}
+      //span{
+      //  position: relative;
+      //  font-size: 14px;
+      //  top: 0;
+      //  left: 0;
+      //}
+    }
+  }
+  .card-label{
+    display: flex;
+    font-size: 12px;
+    input{
+      border-bottom: 1px solid #0ea3b1;
+      width: 80px;
+    }
+    &.no-choose{
+      input{
+        display: none;
+      }
+    }
+  }
+  .card-info{
+    input{
+      width: 53px;
+      border-bottom: 1px solid #696e75;
+    }
+    .short{
+      width: 158px;
+    }
+    .tristate-switcher{
+      input{
+        width: 72px;
+      }
+      i{
+        margin: 0;
+        width: 72px;
+        height: 32px;
+        border-radius: 16px;
+        &:before{
+          top: 3px;
+          left: 24px;
+          width: 24px;
+          height: 24px;
+          background-size: 100% 100%;
+          background-position: 50% 50%;
+          //background: url(/img/switcher_dsntmtr.svg);
+        }
+      }
+      &>input + input:checked + input + i:before{
+        left: 22px;
+      }
+
+      &>input + input + input:checked  + i:before{
+        left: 44px;
+      }
+      &>input:checked + input + input + i:before{
+        left: 4px;
+      }
+    }
+  }
+  .has-error{
+    position: relative;
+  }
+  .error-msg{
+    position: absolute;
+    display: block;
+    right: 0;
+    background: #FFA6A6;
+    //width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    color: #A75656;
+    font-weight: 400;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right:10px solid #FFA6A6;
+      left: -10px;
+    }
+  }
+  #cardform{
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26">
+	<defs>
+		<image width="26" height="26" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAh1BMVEUAAAAPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7FlxM3b8fMprboPo7EPo7H////e8vREt8IPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7EPo7F73NHqAAAALXRSTlMAB0iY0fD/BGbm6XIGJyg17e43BdJ0CFT///9Vn////9Px1NXqdTQezc4faGeo6hGiAAAAyUlEQVR4nIWS6RLCIAyEtxWixaMelB72sN7X+z+fdIo9VOr+YBK+ySSEBYwcd8Q4cTZyHfQ0nnj0lpjOOmTOqCu2aIi/pL5Wa0MWnD7F67oN+yJEclOh4AchCjRR4icSCghNHMWJPpM4MvkWSE0YZ3lCSZ7FJk8BaUJ9mxd5xWvtgGZyzbKWEAfazoVGRZsCpaWqBPaWXofBCbf2d1m2cVTWHZ7+bH7gv4DzZzvhNw64XHvkdu866tE6ynuO+3ZTYSpLKmUaKvzVC74DFl8a7mBcAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="swincher_no" href="#img1" x="0" y="0" />
+</svg>

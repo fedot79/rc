@@ -1,0 +1,66 @@
+/*!
+ * Generated with CSS Flag Sprite generator (https://www.flag-sprites.com/)
+ */
+
+.flag {
+    display: inline-block;
+    /*width: 48px;*/
+    /*height: 48px;*/
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url('/img/flags.png') no-repeat;
+    flex-shrink: 0;
+    background-size: 160px 120px;
+}
+
+
+.flag.flag-am {
+    /*background-position: 0 0;*/
+    background-position: -2px -8px;
+}
+
+.flag.flag-ru {
+    /*background-position: -96px -48px;*/
+    background-position: -87px -48px;
+}
+
+.flag.flag-md {
+    /*background-position: -48px -48px;*/
+    background-position: -47px -48px;
+}
+
+.flag.flag-kz {
+    /*background-position: 0 -48px;*/
+    background-position: -9px -47px;
+}
+
+.flag.flag-uz {
+    /*background-position: -48px -96px;*/
+    background-position: -40px -87px;
+}
+
+.flag.flag-az {
+    /*background-position: -48px 0;*/
+    background-position: -48px -7px;
+}
+
+.flag.flag-kg {
+    /*background-position: -144px 0;*/
+    background-position: -128px -7px;
+}
+
+.flag.flag-ua {
+    /*background-position: 0 -96px;*/
+    background-position: 0 -86px;
+}
+
+.flag.flag-by {
+    /*background-position: -96px 0;*/
+    background-position: -84px -7px;
+}
+
+.flag.flag-tj {
+    /*background-position: -144px -48px;*/
+    background-position: -128px -48px;
+}

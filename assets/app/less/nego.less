@@ -1,0 +1,53 @@
+@import "mediaquery";
+@import "colors";
+.card-list {
+  flex-direction: column;
+  margin-left: 200px;
+  .mobile({
+    margin-left:0;
+    padding-left: 20px;
+  })
+}
+
+.nego{
+  .right{
+    align-self: flex-end;
+    padding-right: 35px;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    color: @light-text;
+    font-size: 14px;
+  }
+  .stars{
+    margin-right: 35px;
+  }
+  .phone{
+    align-self: flex-end;
+    padding-right: 35px;
+    margin-bottom: 15px;
+    color: @def_text;
+    font-family: Gilroy;
+    font-weight: 800;
+    cursor: pointer;
+    a{
+      color: @def_text;
+      &:hover{
+        color: @mint;
+        text-decoration: none;
+      }
+    }
+    img{
+      width: 20px;
+      height: 20px;
+      margin-left: 10px !important;
+    }
+    &:hover{
+      color: @mint;
+    }
+    //&:after{
+    //  background-image: url("/img/mode-circular-button.svg");
+    //  background-position: 50% 50%;
+    //  background-size: 20px 20px;
+    //}
+  }
+}

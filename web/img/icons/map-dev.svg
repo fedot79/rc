@@ -1,0 +1,20 @@
+<svg version="1.1" id="map-dev" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 82.5 55.4" style="enable-background:new 0 0 82.5 55.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3E4852;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Gilroy-ExtraBold';}
+	.st3{font-size:12px;}
+	.st4{font-family:'ConquerorSans-Bold';}
+	.st5{font-family:'Lato-Regular';}
+	.st6{font-size:6.7194px;}
+	.st7{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M70.5,55.4H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h58.5c6.6,0,12,5.4,12,12v31.4
+		C82.5,50,77.1,55.4,70.5,55.4z"/>
+	<text transform="matrix(1 0 0 1 23.4167 16.5837)"><tspan x="0" y="0" class="st1 st2 st3">120 м</tspan><tspan x="29.5" y="0" class="st1 st4 st3">²</tspan></text>
+	<text transform="matrix(1 0 0 1 9.6667 36.5267)"><tspan x="0" y="0" class="st1 st5 st6">•  АРЕНДА</tspan><tspan x="0" y="9" class="st1 st5 st6">•  ПЛОЩАДЬ В ТЦ</tspan></text>
+	<line class="st7" x1="6.8" y1="23.3" x2="76.2" y2="23.3"/>
+</g>
+</svg>
